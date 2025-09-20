@@ -8,7 +8,12 @@ rabbitmq:
   queue:
     order:
         name: order-email-queue
+    email:
+        name: email-queue
   topic-exchange:
       name: order-topic-exchange
   routing-key:
-    name: order-routing-key
+    order:
+      name: order-routing-key
+    email:
+      name: email-routing-key
