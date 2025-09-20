@@ -53,7 +53,7 @@ public class RabbitMQConfig {
     @Bean
     public Binding emailBinding() {
         return BindingBuilder
-                .bind(orderQueue())
+                .bind(emailQueue())
                 .to(topicExchange())
                 .with(emailRoutingKeyName);
     }
