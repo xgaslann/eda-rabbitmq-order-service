@@ -3,3 +3,12 @@ spring:
     name: order-service
 server:
   port: 8080
+
+rabbitmq:
+  queue:
+    order:
+        name: order-email-queue
+  topic-exchange:
+      name: order-topic-exchange
+  routing-key:
+    name: order-routing-key
